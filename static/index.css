@@ -1,0 +1,96 @@
+html {
+  text-align: center;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins&family=Roboto&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  margin: 50px 0 20px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 1vmin);
+}
+
+.box {
+  display: flex;
+  width: 90%;
+  height: 50vh;
+  justify-content: space-between;
+}
+
+.left-box, .right-box {
+  width: 47%;
+  height: 100%;
+  border: 2px solid rgb(46, 46, 46);
+}
+
+.left-img-box, .right-img-box {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.left-img-box img, .right-img-box img{
+  width: 100%; 
+  max-height: 100%; 
+  object-fit: contain;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  
+}
+
+input[type=file]{
+  background-color: #0b97d8;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+#sendbutton{
+  height: 40px;
+  width: 150px;
+  background-color: rgb(223, 147, 8);
+  border: 0px;
+  border-radius: 13px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  margin: 20px;
+}
+
+#sendbutton:hover{
+  background-color: rgb(6, 240, 209);
+  color: black;
+}
+
+.voiceoutputbtn-1,.voiceoutputbtn-2{
+  display: none;
+  padding: 10px 20px;
+  background-color: rgb(8, 116, 240);
+  color: rgb(253, 250, 250);
+  cursor: pointer;
+  border-radius: 13px;
+  border: 0px;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 20px;
+}
