@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Notes Detection</title>
+  <link rel="stylesheet" type="text/css" href="../static/index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="../static/index.js"></script>
+</head>
+
+<body>
+  <div class="main">
+    <h1>Currency Notes Detection</h1>
+    <div class="box">
+      <div class="left-box">
+        <div class="left-img-box">
+          <img id="imagebox1" src="" />
+        </div>
+        <form style="display: inline;">
+          <input id="imageinput" type="file" name="image" onchange="readUrl(this)">
+        </form>
+        <button name="send" id="sendbutton" onclick="changeColor()">Detect</button>
+      </div>
+
+      <div class="right-box">
+        <div class="right-img-box">
+          <img id="imagebox2" src="" />
+        </div>
+        <button id="voice-english-output" class="voiceoutputbtn-1">Get English Speech Out</button>
+        <button id="voice-hindi-output" class="voiceoutputbtn-2">Get Hindi Speech Out</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
