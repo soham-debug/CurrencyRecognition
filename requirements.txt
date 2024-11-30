@@ -35,7 +35,7 @@ seaborn==0.12.2
 six==1.16.0
 soupsieve==2.4.1
 sympy==1.12
-torch==2.0.1
+torch==2.2.0
 torchaudio==2.0.2
 torchvision==0.15.2
 tqdm==4.65.0
